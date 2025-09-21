@@ -1,0 +1,141 @@
+/* --- General Body and Layout --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Dark background */
+    color: #e0e0e0;      /* Light gray text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: #1e1e1e; /* Slightly lighter dark background for the container */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid #333;
+}
+
+/* --- Typography --- */
+h1 {
+    text-align: center;
+    color: #bb86fc; /* Purple accent color */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(187, 134, 252, 0.2);
+}
+
+p {
+    text-align: center;
+    color: #a0a0a0; /* Subdued text color */
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+/* --- Textarea and Button --- */
+textarea {
+    width: calc(100% - 20px);
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    background: #2b2b2b; /* Darker input background */
+    color: #e0e0e0;
+    font-size: 16px;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #bb86fc;
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.5);
+    outline: none;
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 30px;
+    background: #bb86fc; /* Purple accent color */
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(187, 134, 252, 0.3);
+}
+
+button:hover {
+    background: #995cfa;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(187, 134, 252, 0.5);
+}
+
+/* --- Result Section --- */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1em;
+    background: #2b2b2b;
+    border: 1px solid transparent; /* Start with a transparent border */
+    transition: all 0.5s ease-in-out;
+}
+
+#result p {
+    text-align: left;
+    margin: 0;
+    line-height: 1.5;
+    color: #000000;
+}
+
+/* --- Specific result styles (for JavaScript) --- */
+.claim-result {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.1);
+    border-left: 5px solid #cf6679; /* Red accent bar */
+    transition: transform 0.3s ease;
+}
+
+.claim-result:hover {
+    transform: translateX(5px);
+}
+
+.claim-result strong {
+    color: #cf6679; /* Red for emphasis */
+}
+
+/* --- Class-based styles for a nicer look via JS --- */
+.success-result {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #03dac6; /* Green accent border */
+}
+
+.error-result {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #cf6679; /* Red accent border */
+}
+
+a {
+    color: #03dac6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #018786;
+}
